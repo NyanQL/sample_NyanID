@@ -1,0 +1,34 @@
+{
+  "name": "nyanIDのためのNyanQL",
+  "profile": "nyanIDのためのNyanQLです。",
+  "version": "0.0.1",
+  "Port": 8103,
+  "BasicAuth": {
+    "Username": "neko",
+    "Password": "nyan"
+  },
+  "certPath": "",
+  "keyPath": "",
+  "DBType": "sqlite",
+  "DBUser": "",
+  "DBPassword": "",
+  "DBName": "nyanID.db",
+  "DBHost": "",
+  "DBPort": "",
+  "MaxOpenConnections": 10,
+  "MaxIdleConnections": 5,
+  "ConnMaxLifetimeSeconds": 3600,
+  "log": {
+    "Filename": "./logs/nyanql.log",
+    "MaxSize": 5,
+    "MaxBackups": 3,
+    "MaxAge": 7,
+    "Compress": true,
+    "EnableLogging": true
+  },
+  "javascript_include": [
+    "scripts/config/apiPasswordHash.js",
+    "./scripts/lib/nyanRequestCheck.js",
+    "./scripts/base.js"
+  ]
+}

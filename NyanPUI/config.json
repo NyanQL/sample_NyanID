@@ -1,0 +1,21 @@
+{
+  "name": "認証局管理システム",
+  "profile": "認証局管理システムです。",
+  "version": "0.0.1",
+  "Port": 8101,
+  "certPath": "",
+  "keyPath": "",
+  "javascript_include": [
+    "./scripts/base.js",
+    "./html/js/lib/nyanPlate.js",
+    "./scripts/lib/nyanPlateToJson.js"
+  ],
+  "log": {
+    "Filename": "./logs/nyanpui.log",
+    "MaxSize": 5,
+    "MaxBackups": 3,
+    "MaxAge": 7,
+    "Compress": true,
+    "EnableLogging": true
+  }
+}

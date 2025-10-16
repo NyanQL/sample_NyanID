@@ -1,0 +1,91 @@
+{
+  "html": {
+  "script": "./scripts/html.js",
+  "html": "./templates/html.html",
+  "description": "トップページ"
+  },
+  "init": {
+    "script": "./scripts/init.js",
+    "html": "./templates/init.html",
+    "description": "初期設定"
+  },
+  "login": {
+    "script": "./scripts/html.js",
+    "html": "./templates/login.html",
+    "description": "管理者ログイン認証"
+  },
+  "password_reset": {
+    "script": "./scripts/html.js",
+    "html": "./templates/password_reset.html",
+    "description": "パスワードリセット"
+  },
+  "clients": {
+    "script": "./scripts/html.js",
+    "html": "./templates/clients.html",
+    "description": "OAuth サービス一覧取得"
+  },
+  "client": {
+    "script": "./scripts/html.js",
+    "html": "./templates/client_form.html",
+    "description": "OAuth サービス詳細取得（編集フォーム表示）"
+  },
+  "client_create": {
+    "script": "./scripts/html.js",
+    "html": "./templates/client_create.html",
+    "description": "OAuth サービス新規登録"
+  },
+  "clients_update": {
+    "script": "./scripts/clients_update.js",
+    "description": "OAuth サービス更新"
+  },
+  "users": {
+    "script": "./scripts/html.js",
+    "html": "./templates/users.html",
+    "description": "ユーザー一覧取得"
+  },
+  "user": {
+    "script": "./scripts/html.js",
+    "html": "./templates/user_form.html",
+    "description": "ユーザー詳細取得（編集フォーム表示）"
+  },
+  "user_create": {
+    "script": "./scripts/html.js",
+    "html": "./templates/user_create.html",
+    "description": "ユーザー登録"
+  },
+  "user_update": {
+    "script": "./scripts/users_update.js",
+    "description": "ユーザー更新"
+  },
+  "user_delete": {
+    "script": "./scripts/users_delete.js",
+    "description": "ユーザー削除"
+  },
+  "roles_list": {
+    "script": "./scripts/roles_list.js",
+    "html": "./templates/roles.html",
+    "description": "ロール一覧取得"
+  },
+  "roles_get": {
+    "script": "./scripts/roles_get.js",
+    "html": "./templates/role_form.html",
+    "description": "ロール詳細取得（編集フォーム表示）"
+  },
+  "roles_create": {
+    "script": "./scripts/roles_create.js",
+    "description": "ロール登録"
+  },
+  "roles_update": {
+    "script": "./scripts/roles_update.js",
+    "description": "ロール更新"
+  },
+  "roles_delete": {
+    "script": "./scripts/roles_delete.js",
+    "description": "ロール削除"
+  },
+  "tokens_list": {
+    "script": "./scripts/tokens_list.js",
+    "html": "./templates/tokens.html",
+    "description": "アクセストークン発行履歴取得"
+  }
+}

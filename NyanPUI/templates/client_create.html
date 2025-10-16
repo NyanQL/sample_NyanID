@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>NyanID サービス新規登録</title>
+    <meta charset="UTF-8">
+    <!--  cssの設定 -->
+    <link href="/css/style.css?time=20250428_3" rel="stylesheet" type="text/css" media="all">
+    <script src="/js/const.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/lib/nyanPlate.js"></script>
+    <script src="/js/lib/validation.js"></script>
+    <script src="/js/client_create.js?time=20"></script>
+</head>
+<body>
+<header data-nyanString="html_header">
+    <h1 class="center">サービス新規登録</h1>
+    <div class="container right"><a href="/clients" class="button small bg-gray">一覧に戻る</a></div>
+</header>
+<main>
+    <div class="container">
+        <div id="result_message" class="mb_32"></div>
+        <span class="red">*</span> は必須項目です。
+        <div id="clientData">
+            <table>
+                <tr>
+                    <th>名前<span class="red">*</span></th>
+                    <td><input type="text" class="w_100" id="name" name="name" data-nyanValue="name" required></td>
+                </tr>
+                <tr>
+                    <th>URL<span class="red">*</span></th>
+                    <td><input type="text" class="w_100" id="redirect_uri" name="redirect_uri" required></td>
+                </tr>
+                <tr>
+                    <th>秘密キー<span class="red">*</span></th>
+                    <td><input type="text" class="w_50" id="secret" name="secret" data-nyanValue="secret" required></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+
+        </div>
+        <div class="right mt_32">
+            <a href="javascript:void(0)" class="button small" onclick="create()" id="create_button">新規登録</a>
+        </div>
+    </div>
+
+</main>
+<footer data-nyanHtml="footerHtml">
+    NyanID
+</footer>
+</body>
+</html>

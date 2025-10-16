@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>NyanID 初期設定</title>
+    <!--  cssの設定 -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/js/const.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/lib/validation.js"></script>
+    <script src="/js/init.js?time=5"></script>
+
+</head>
+<body>
+<header data-nyanHtml="html_header">
+    <h1 class="center">NyanID</h1>
+</header>
+<main ata-nyanHtml="html_main">
+    <div class="container">
+        <div class="mt_16 orange" data-nyanString="message"></div>
+    </div>
+    <div class="container">
+            <div style="width: auto">
+           使用するアカウントを作成します。
+                <div id="message"></div>
+                <div class="mt_32">
+                    <label>ユーザー名前(ログイン時に使用）英数字で記載ください</label><br>
+           <input type="text" name="username" id="username">
+           </div>
+           <div>
+               <label>メールアドレス</label><br>
+               <input type="text" name="email" id="email">
+           </div>
+                <div>
+                    <lavel>パスワード 8文字以上の半角英数字小文字大文字混在で入力してください。</lavel>
+                    <br>
+                    <input type="password" name="password" id="password">
+           </div>
+                <div class="mt_32 hidden" onclick="create()" id="submit_button">
+                    <button class="small">送信</button>
+                </div>
+       </div>
+    </div>
+</main>
+<footer data-nyanHtml="footerHtml">
+    NyanID
+</footer>
+</body>
+</html>

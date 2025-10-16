@@ -1,0 +1,95 @@
+{
+  "auth_login": {
+    "script": "./scripts/auth_login.js",
+    "description": "管理者ログイン認証"
+  },
+  "auth_refresh": {
+    "script": "./scripts/auth_refresh.js",
+    "description": "アクセストークンリフレッシュ"
+  },
+  "auth_logout": {
+    "script": "./scripts/auth_logout.js",
+    "description": "ログアウト"
+  },
+  "password_reset": {
+    "script": "./scripts/password_reset.js",
+    "description": "パスワード再設定"
+  },
+  "clients_list": {
+    "script": "./scripts/clients_list.js",
+    "description": "OAuth サービス一覧取得 (読み込み専用)"
+  },
+  "client_get": {
+    "script": "./scripts/client_get.js",
+    "description": "OAuth サービス詳細取得"
+  },
+  "client_create": {
+    "script": "./scripts/clients_create.js",
+    "description": "OAuth サービス登録"
+  },
+  "client_update": {
+    "script": "./scripts/clients_update.js",
+    "description": "OAuth サービス更新"
+  },
+  "client_delete": {
+    "script": "./scripts/clients_delete.js",
+    "description": "OAuth サービス削除"
+  },
+  "users_list": {
+    "script": "./scripts/users_list.js",
+    "description": "ユーザー一覧取得"
+  },
+  "user_get": {
+    "script": "./scripts/users_get.js",
+    "description": "ユーザー詳細取得"
+  },
+  "user_clients_list": {
+    "script": "./scripts/user_clients_list.js",
+    "description": "ユーザー詳細取得"
+  },
+  "users_create": {
+    "script": "./scripts/users_create.js",
+    "description": "ユーザー登録"
+  },
+  "users_update": {
+    "script": "./scripts/users_update.js",
+    "description": "ユーザー更新"
+  },
+  "users_password_update": {
+    "script": "./scripts/users_password_update.js",
+    "description": "ユーザーパスワード変更と通知"
+  },
+  "users_delete": {
+    "script": "./scripts/users_delete.js",
+    "description": "ユーザー削除"
+  },
+  "roles_list": {
+    "script": "./scripts/roles_list.js",
+    "description": "ロール一覧取得"
+  },
+  "roles_get": {
+    "script": "./scripts/roles_get.js",
+    "description": "ロール詳細取得"
+  },
+  "refresh_token": {
+    "script": "./scripts/refresh_token.js",
+    "description": "リフレッシュトークン発行"
+  },
+  "init_check": {
+    "script": "./scripts/init_check.js",
+    "description": "初期設定確認"
+  },
+  "setup": {
+    "script": "./scripts/setup.js",
+    "description": "初期設定実行"
+  },
+  "me": {
+    "script": "./scripts/me.js",
+    "description": "tokenからidとroleを取得"
+  },
+  "update_users": {
+    "script": "./scripts/update_users.js",
+    "description": "ユーザーの更新情報"
+  }
+}
+

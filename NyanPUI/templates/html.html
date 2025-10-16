@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>NyanID</title>
+    <!--  cssの設定 -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/js/const.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/auth.js"></script>
+</head>
+<body>
+<header data-nyanHtml="html_header">
+    <div class="right"><a href="javascript:void(0)" onclick="logout()" class="button small bg-gray">ログアウト</a></div>
+    <h1 class="center">NyanID</h1>
+</header>
+<main ata-nyanHtml="html_main">
+
+    <div class="container">
+        <ul>
+            <li><a href="/clients">サービス一覧</a></li>
+            <li><a href="/users">アカウント一覧</a></li>
+        </ul>
+        <div id="clientsData"></div>
+    </div>
+
+
+
+
+</main>
+<footer data-nyanHtml="footerHtml">
+    NyanID
+</footer>
+<script>
+    window.onload = function(){
+        location.href = "/clients";
+    }
+</script>
+</body>
+</html>

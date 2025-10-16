@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>NyanID サービス一覧</title>
+    <!--  cssの設定 -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/js/const.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/lib/nyanPlate.js"></script>
+    <script src="/js/user_list.js"></script>
+</head>
+<body>
+<header data-nyanString="html_header">
+    <div class="right"><a href="/" class="button small bg-gray">HOME</a></div>
+    <h1 class="center">アカウント一覧</h1>
+</header>
+<main>
+    <div class="container">
+        <ul class="tabs">
+            <li><a href="/clients" class="tab-link">サービス一覧</a></li>
+            <li><a href="/users"   class="tab-link  active">アカウント一覧</a></li>
+        </ul>
+        <div class="right"><a href="/user_create">新規作成</a></div>
+        <div id="usersData">
+        </div>
+    </div>
+</main>
+<footer data-nyanHtml="footerHtml">
+    NyanID
+</footer>
+</body>
+</html>

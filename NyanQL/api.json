@@ -1,0 +1,108 @@
+{
+  "init_check": {
+    "check": "./scripts/init_check_check.js",
+    "script": "./scripts/init_check.js",
+    "description": "NyanID初期設定済み確認"
+  },
+  "setup": {
+    "check": "./scripts/setup_check.js",
+    "script": "./scripts/setup.js",
+    "description": "NyanID初期設定済み確認"
+  },
+  "clients_list": {
+    "sql": ["./sql/clients_list.sql"],
+    "check": "./scripts/clients_list_check.js",
+    "description": "OAuth サービス一覧取得"
+  },
+  "client_get": {
+    "sql": ["./sql/clients_get.sql"],
+    "check": "./scripts/clients_get_check.js",
+    "description": "OAuth サービス詳細取得"
+  },
+  "client_create": {
+    "check": "./scripts/clients_create_check.js",
+    "script": "./scripts/clients_create.js",
+    "description": "OAuth サービス登録"
+  },
+  "client_update": {
+    "check": "./scripts/clients_update_check.js",
+    "script": "./scripts/clients_update.js",
+    "description": "OAuth サービス更新"
+  },
+  "client_delete": {
+    "sql": ["./sql/clients_delete.sql"],
+    "check": "./scripts/clients_delete_check.js",
+    "description": "OAuth サービス削除"
+  },
+  "users_list": {
+    "sql": ["./sql/users_list.sql"],
+    "description": "ユーザー一覧取得"
+  },
+  "user_get": {
+    "sql": ["./sql/users_get.sql"],
+    "check": "./scripts/users_get_check.js",
+    "description": "ユーザー詳細取得"
+  },
+  "user_clients_list": {
+    "sql": ["./sql/user_clients_list.sql"],
+    "check": "./scripts/user_clients_list_check.js",
+    "description": "ユーザー サービス情報"
+  },
+  "users_create": {
+    "check": "./scripts/users_create_check.js",
+    "script": "./scripts/users_create.js",
+    "description": "ユーザー登録"
+  },
+  "users_update": {
+    "check": "./scripts/users_update_check.js",
+    "script": "./scripts/users_update.js",
+    "description": "ユーザー更新"
+  },
+  "users_password_update": {
+    "check": "./scripts/users_password_update_check.js",
+    "script": "./scripts/users_password_update.js",
+    "description": "ユーザーパスワードの更新"
+  },
+  "users_delete": {
+    "sql": ["./sql/users_delete.sql"],
+    "check": "./scripts/users_delete_check.js",
+    "description": "ユーザー削除"
+  },
+  "roles_list": {
+    "sql": ["./sql/roles_list.sql"],
+    "description": "ロール一覧取得"
+  },
+  "roles_get": {
+    "sql": ["./sql/roles_get.sql"],
+    "check": "./scripts/roles_get_check.js",
+    "description": "ロール詳細取得"
+  },
+  "users_login": {
+    "check": "./scripts/users_login_check.js",
+    "script": "./scripts/users_login.js",
+    "description": "ユーザーIDとパスワードで認証を行う"
+  },
+  "refresh_token": {
+    "check": "./scripts/refresh_token_check.js",
+    "script": "./scripts/refresh_token.js",
+    "description": "リフレッシュトークンを使用してアクセストークンを更新する"
+  },
+  "password_reset": {
+    "check": "./scripts/password_reset_check.js",
+    "script": "./scripts/password_reset.js",
+    "description": "パスワードを変更する"
+  },
+  "user_by_username_or_email": {
+    "sql": ["./sql/user_by_username_or_email.sql"],
+    "description": "ユーザーユーザ名かメールアドレスで特定して情報を返す。"
+  },
+  "me": {
+    "check": "./scripts/me_check.js",
+    "script": "./scripts/me.js",
+    "description": "ログインしているアカウントのidとroleを返す"
+  },
+  "update_users": {
+    "sql": ["./sql/update_users.sql"],
+    "description": "ユーザーの更新情報を取得"
+  }
+}

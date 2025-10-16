@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>NyanID ログイン</title>
+    <!--  cssの設定 -->
+    <link href="/css/style.css?time=20250427_2" rel="stylesheet" type="text/css" media="all">
+    <script src="/js/const.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/login.js"></script>
+</head>
+<body>
+<header data-nyanString="html_header">
+    <h1>NyanID ログイン</h1>
+</header>
+<main data-nyanString="html_main">
+    <section class="login-section container">
+        <div id="loginForm">
+            <div class="form-group center">
+                <label for="username">ユーザー名</label>
+                <input type="text" id="username" name="username" value="" placeholder="ユーザー名を入力してください">
+            </div>
+            <div class="form-group  center">
+                <label for="password">パスワード</label>
+                <input type="password" id="password" name="password" value="" required placeholder="パスワードを入力してください">
+            </div>
+            <div class="center mt_32">
+                <button type="button" id="loginButton" onclick="login()">ログイン</button>
+            </div>
+            <div class="center mt_32">
+                <a href="/password_reset">パスワードを忘れた方はこちら</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer data-nyanHtml="footerHtml">
+    NyanID
+</footer>
+</body>
+</html>

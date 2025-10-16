@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>NyanID サービス一覧</title>
+    <!--  cssの設定 -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/js/const.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/lib/nyanPlate.js"></script>
+    <script src="/js/lib/validation.js"></script>
+    <script src="/js/user.js?time=51"></script>
+</head>
+<body>
+<header data-nyanString="html_header">
+    <div class="right"><a href="/" class="button small bg-gray">HOME</a></div>
+    <h1 class="center">アカウント詳細</h1>
+</header>
+<main>
+    <div class="container">
+        <div class="right"><a href="/users">一覧に戻る</a></div>
+        <h2>アカウント情報</h2>
+        <div><span class="red">*</span>がついている項目は必須です。</div>
+        <div id="user_message"></div>
+        <div id="usersData" class="mb_32">
+            <table>
+                <tbody data-nyanLoop="result">
+                <tr>
+                    <th>ID</th>
+                    <td data-nyanString="id"></td>
+                </tr>
+                <tr>
+                    <th>名前</th>
+                    <td><input type="text" name="username" id="username" data-nyanValue="username"></td>
+                </tr>
+                <tr>
+                    <th>メールアドレス</th>
+                    <td><input type="text" name="email" id="email" data-nyanValue="email"></td>
+                </tr>
+                <tr>
+                    <th>新規作成日</th>
+                    <td data-nyanString="created_at"></td>
+                </tr>
+                <tr>
+                    <th>最終更新日</th>
+                    <td data-nyanString="updated_at"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container mb_32">
+        <h2>利用可能サービス</h2>
+        <div id="client_message"></div>
+        <div class="mt_32 mb_32" id="userClientData">
+        </div>
+        <div class="right hidden mb_32" id="wrap_client_edit_button"><a class="button small" href="javascript:void(0)" onclick="edit()">更新登録</a></div>
+    </div>
+
+    <div class="container mb_32">
+        <h2>パスワードの設定送信</h2>
+        <div id="password_message">パスワードを自動生成しメールにて通知します。</div>
+        <div class="mt_32 mb_32" id="passwordData">
+        </div>
+        <div class="right mb_32" id="wrap_password_create"><a class="button small" href="javascript:void(0)" onclick="password_create()">変更登録とメール通知</a></div>
+    </div>
+
+    <div class="container mb_32">
+    <h2>アカウントの削除</h2>
+        <div>アカウントを削除するとアカウント情報の復旧はできません。</div>
+        <div class="right"><a class="button small bg-red" href="javascript:void(0)" onclick="user_delete()"> アカウントの削除</a></div>
+    </div>
+
+</main>
+<footer data-nyanHtml="footerHtml">
+    NyanID
+</footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "NyanIDのためのにゃんぱ",
+  "profile": "NyanIDのためのにゃんぱちです",
+  "version": "0.0.1",
+  "Port": 8102,
+  "certPath": "",
+  "keyPath": "",
+  "javascript_include": [
+    "./scripts/const.js",
+    "./scripts/base.js",
+    "./scripts/lib/nyanRequestCheck.js"
+  ],
+  "log": {
+    "Filename": "./logs/nyan8.log",
+    "MaxSize": 5,
+    "MaxBackups": 3,
+    "MaxAge": 7,
+    "Compress": true,
+    "EnableLogging": true
+  },
+  "smtp": {
+    "host": "",
+    "port": 587,
+    "username": "",
+    "password": "",
+    "from_email": "",
+    "from_name": "NyanID",
+    "tls": false,
+    "default_bcc": [
+      ""
+    ]
+  }
+}

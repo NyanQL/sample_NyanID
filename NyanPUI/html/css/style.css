@@ -1,0 +1,231 @@
+/*
+* style.css
+*/
+
+body {
+    width: 100%;
+    background-color: #65676b;
+    margin:0;
+    padding:0;
+    font-size: 16px;       /* 基本フォントサイズ */
+}
+header{
+    margin:0;
+    padding:10px;
+    background-color: #FFFFFF;
+    display: block;
+    text-align: center;
+}
+header h1 {
+    padding-bottom: 8px;
+}
+main {
+    margin:0;
+    width: 100%;
+    background-color: #FFFFFF;
+    min-height: 400px;
+}
+footer{
+    margin:0;
+    padding:10px;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+footer a {
+    text-decoration: none;
+    color:#FFFFFF;
+    fill: #FFFFFF;
+}
+
+footer a svg
+{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.copyright a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+/*bg color*/
+.bg-red, .button.bg-red{
+    background-color: red;
+}
+.bg-blue, .button.bg-blue{
+    background-color: blue;
+}
+
+.bg-green, .button.bg-green{
+    background-color: green;
+}
+
+.bg-green, .button.bg-gray{
+    background-color: gray;
+}
+
+/**/
+.center {
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.container {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/*button */
+button, a.button {
+    background-color:  #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-size:120%;
+    text-decoration: none;
+}
+
+button:hover, a.button:hover, button:disabled,
+a.button:disabled
+{
+    opacity: 0.8; /* 透明度だけ変える */
+    text-decoration: none;
+}
+a.button.small, button.small {
+    padding: 8px 16px;      /* ボタンの内側余白 */
+    font-size: 80%;        /* フォントサイズを100%に */
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.toplink{
+    margin-top: 120px;
+    width: 200px;
+    height: auto;
+}
+
+/*margin*/
+.mt_0 {
+    margin-top: 0px;
+}
+.mt_32 {
+    margin-top: 32px;
+}
+.mt_16 {
+    margin-top: 16px;
+}
+.mb_32 {
+    margin-bottom: 32px;
+}
+
+/*width %*/
+.w_100{
+    width:100%;
+}
+.w_50{
+    width:50%
+}
+
+/* table */
+table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead, table tbody {
+
+}
+tr {
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 1px;
+}
+table th, table td {
+    padding: 8px;
+    text-align: left;
+}
+table thead th {
+    font-weight: bold;
+}
+
+input {
+    padding:4px;
+    font-size:120%;
+    border:1px solid #CCC;
+    border-radius: 4px;
+}
+
+/*hidden*/
+.hidden {
+    display: none;
+}
+
+/*text*/
+.black {
+    color: #000;
+}
+.gray {
+    color: gray;
+}
+.red {
+    color:red ;
+}
+.green {
+    color:green;
+}
+.blue {
+    color:blue;
+}
+.orange {
+    color: #f18440;
+}
+
+/* タブ風ナビゲーション（最小変更） */
+.tabs { display: flex; gap: 8px; list-style: none; padding: 0; margin: 0 0 16px 0; border-bottom: 1px solid #e6e6e6; }
+.tabs li { margin: 0; }
+.tabs .tab-link {
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #374151;
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-radius: 8px 8px 0 0;
+    transition: background .12s, color .12s, box-shadow .12s;
+}
+.tabs .tab-link:hover,
+.tabs .tab-link:focus { text-decoration: none; outline: none; }
+
+/* 「選択中」見た目 — サーバーで class="active" を付与する想定 */
+.tabs .tab-link.active,
+.tabs .tab-link[aria-current="page"] { /* aria-current が使えるなら併用可 */
+    background: #ffffff;
+    color: #111827;
+    font-weight: 600;
+    border: 1px solid #e6e6e6;
+    border-bottom-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+
+@media (max-width: 480px) {
+    .tabs { overflow-x: auto; padding-bottom: 6px; }
+    .tabs .tab-link { padding: 8px 12px; white-space: nowrap; }
+}
