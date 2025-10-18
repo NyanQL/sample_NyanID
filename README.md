@@ -17,7 +17,7 @@ SQLiteが動く環境を作成しましょう。
 ここでのWindowsとはWindows 11を指します。
 ### 1) 公式バイナリをダウンロードする
 公式ダウンロードページ ( https://www.sqlite.org/download.html )で 
-Windows 向けの「Precompiled Binaries for Windows」から sqlite-tools-win32-x86-<version>.zip（コマンドライン用の実行ファイル一式）をダウンロードします。
+Windows 向けの「Precompiled Binaries for Windows」から sqlite-tools-win32-x86-{version}.zip（コマンドライン用の実行ファイル一式）をダウンロードします。
 
 ### 2) ZIP を展開して実行ファイルを置く
 
