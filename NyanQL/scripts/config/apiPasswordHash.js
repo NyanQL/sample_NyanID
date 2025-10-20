@@ -1,1 +1,1 @@
-const apiPasswordHash = "29e50ddd7d24514b4bca4082df7cbe0ceb94fe3a332341bde2c8252e9cfc3c6d";
+const apiPasswordHash = "8c12101fb4d84615eea76d8c16542d5774d302f4e65765526f44617828efcb0a";
