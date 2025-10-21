@@ -24,6 +24,21 @@ function requestCheckPassword (name, password) {
  */
 function tokenCheck () {
   console.log('== tokenCheck start =========')
+
+  //期限のチェック
+  const now = Math.floor(Date.now() / 1000)
+  const access_token = nyanAllParams.access_token
+  const parts = access_token.split('.')
+  if (parts[0] < now) {
+    nyanErros.client_id = 'Token expired.'
+    return //期限切れなら以降のチェックはしない
+  }
+
+  if (parts[1] !== accessToken_prefix) {
+    nyanErros.client_id = 'Token prefix invalid.'
+    return //prefix違いなら以降のチェックはしない
+  }
+
   const clients = nyanRunSQL('./sql/clients_check.sql', nyanAllParams)
   console.log(clients)
   if (clients.length === 0) {
