@@ -8,7 +8,6 @@ function main () {
     './sql/refresh_tokens_by_token.sql',
     nyanAllParams
   )
-  console.log(refresh_tokens)
 
   const expires_at = Math.floor(Date.now() / 1000) + 60 * 60 * 1
   const token =

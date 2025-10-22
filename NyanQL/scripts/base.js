@@ -30,12 +30,12 @@ function tokenCheck () {
   const access_token = nyanAllParams.access_token
   const parts = access_token.split('.')
   if (parts[0] < now) {
-    nyanErros.client_id = 'Token expired.'
+    nyanErros.access_token = 'Token expired.'
     return //期限切れなら以降のチェックはしない
   }
 
   if (parts[1] !== accessToken_prefix) {
-    nyanErros.client_id = 'Token prefix invalid.'
+    nyanErros.access_token = 'Token prefix invalid.'
     return //prefix違いなら以降のチェックはしない
   }
 
